@@ -1,5 +1,6 @@
 import logo from './chipmit-logo.png';
 import './App.css';
+import ImageSlider from './ImageSlider';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <p className="Title">
           Coming Soon
         </p>
-        
+        <ImageSlider />
       </header>
     </div>
   );

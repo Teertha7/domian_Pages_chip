@@ -2,6 +2,8 @@
 
 .App {
   text-align: center;
+  background-color: #222222;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
@@ -16,25 +18,70 @@
 }
 
 .App-header {
-  background-color: #222222;
   min-height: 100vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .Title {
-  font-size: 2vw;
-  font-family: Poppins;
-  font-weight:600;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
+.Slider-container {
+  width: 90%;
+  max-width: 956px;
+  margin: 0 auto;
+}
+
+.Slider-image {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Keeps the image proportionate */
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust for smaller devices */
+@media (max-width: 768px) {
+  .Slider-image {
+    aspect-ratio: 4 / 3; /* slightly taller for phones */
+  }
+}
+
+/* Swiper styles */
+.swiper-pagination-bullet {
+  background-color: #fff;
 }
 
 
+/* Override default Swiper arrow colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;   /* Force white color */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background 0.3s ease;
+  font-size: 14px;
+
+}
+
+/* Optional: On hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+}
+
+/* Resize arrow icons if needed */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size:14px !important;
+}
