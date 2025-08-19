@@ -7,7 +7,7 @@
 }
 
 ::selection {
-	background-color: #b3ff00;
+	background-color: #d1ff22;
 	color: black;
 }
 
@@ -16,15 +16,86 @@
 	font-family: "Inter", sans-serif;
 }
 
+.top-navbar {
+	 display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    padding: 20px;
+	
+}
+.navbar-padding-container {
+    padding: 10px 8vw; /* Match your .top-navbar ol padding */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+}
+
+.navbar-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+	padding: 0;
+    border-radius: 10rem;
+    box-sizing: border-box;
+}
+
+.navbar-slider {
+    position: absolute;
+	top: 5px;    /* Add gap from top */
+    bottom: 5px; /* Add gap from bottom */
+    left: 8vw;   /* Match left padding of navbar */
+    right: 8vw;  /* Match right padding of navbar */
+    height: calc(100% - 10px);
+    
+    
+    background: #d1ff22;
+    border-radius: 3vw;
+    z-index: 0;
+    transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+    opacity: 0.2;
+    pointer-events: none;
+	margin: 0;
+	padding:0;
+}
+
+
+
 .top-navbar ol {
+	
 	list-style: none;
 	border-radius: 10rem;
-	background-color: dimgray;
+	font-size: 15px;
 	width: fit-content;
 	margin: 3vh auto;
 	padding-left: 0;
 	color: lightgray;
 	text-align: center;
+	font-weight: 500;
+	
+    border-width: 1px;
+    border-color: var(--token-69a06b4a-447e-422e-9e50-d39672ecdf48, rgba(136, 126, 126, 0));
+    padding: 5px 8vw 5px 8vw;
+    border-style: solid;
+    backdrop-filter: blur(10px);
+    background-color: var(--token-f8462981-9721-42e6-b3e4-0addd9427ec8, rgba(92, 92, 92, 0.581));
+    
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 6vw;
+	
 }
 
 .top-navbar ol li {
@@ -34,25 +105,27 @@
 }
 
 .top-navbar ol li:hover {
-	background-color: #b3ff00;
+	background-color: #d1ff22;
 	color: black !important;
 }
 
-.main-heading {
-	padding-left: 6vw;
-	padding-bottom: 2rem;
+.main-heading, .description, h2 {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
-	color: #b3ff00;
+	color: #d1ff22;
 	font-size: min(10vw, 4rem);
 	padding-bottom: 0.5rem;
 }
 
-.subtitle {
+/* .subtitle {
 	font-size: min(5vw, 2rem);
 	padding: 0;
-}
+} */
 
 p {
 	color: lightgray;
@@ -66,7 +139,7 @@ p {
 }
 
 h2 {
-	color: #b3ff00;
+	color: #d1ff22;
 	padding-left: 6vw;
 	font-size: min(6vw, 2.2rem);
 }
@@ -214,6 +287,22 @@ section {
 	/* .tools {
 		flex-direction: column;
 	} */
+	 .top-navbar {
+        padding: 10px 2px;
+		/* row-gap: 10vw; */
+		
+    }
+    .top-navbar ol {
+        
+        padding: 1vw 11vw 1vw 11vw;
+        font-size: 12px;
+		column-gap: 6vw;
+    }
+    .top-navbar ol li {
+        padding: 0.3rem 0.5vw;
+		
+    }
+	
 
 	.project-content {
 		flex-direction: column;
@@ -227,4 +316,259 @@ section {
 	.project-data {
 		max-width: 85vw;
 	}
+	
 }
+
+
+/* anoushka ghosh */
+
+
+/* AnalogDomain.css */
+
+.container {
+  background-color: #000000;
+  color: #cccccc;
+  height: 100%;
+  width: 100%;
+  padding:90px;
+}
+.analog-domain-container {
+align-items: flex-start;
+
+  /* padding: 90px; */
+  /* margin: 50px auto 0 auto; Changed from 'margin: 50px auto;' */
+  font-family: 'Inter', Arial, sans-serif;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.highlight-title {
+  color: #d1ff22;
+  font-size: 5.7rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1;
+  display: inline-block;
+}
+
+.subtitle {
+  color: #d7d7d7a2;
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: block;
+  letter-spacing: -.05em;
+  margin-bottom: 60px;
+}
+
+.analog-domain-text {
+  margin-top: 28px;
+  font-size: 1.02rem;
+  color: #c7c7c7;
+  line-height: 1.4;
+}
+
+.analog-domain-text p {
+  width: 55%;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .analog-domain-container {
+    /* padding: 40px 20px; */
+
+    margin: 20px auto;
+  }
+  .container {
+	padding: 40px 20px;
+  }
+  .highlight-title {
+    font-size: 3.5rem;
+    word-break: break-word;
+  }
+  
+  .subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+  
+  .analog-domain-text {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .analog-domain-text p {
+    width: 100%;
+  }
+}
+@media (max-width:580px) {
+	.top-navbar ol {
+        
+        padding: 7px 31px 7px 31px;
+        font-size: 11px;
+		column-gap: 5vw;
+    }
+	
+}
+/* Extra small screens */
+@media (max-width: 480px) {
+	.top-navbar ol {
+        
+        padding: 5px 24px 5px 24px;
+        font-size: 9px;
+		column-gap: 4.3vw;
+    }
+  .analog-domain-container {
+    /* padding: 30px 15px; */
+    margin: 10px auto;
+  }
+  .container {
+	padding: 30px 15px;
+  }
+  .highlight-title {
+    font-size: 2.8rem;
+  }
+  
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .analog-domain-text {
+    font-size: 0.95rem;
+  }
+}
+/* Add this to your existing AnalogDomain.css */
+
+.tools-container {
+    padding: 60px;
+    margin: 20px auto 0 auto; 
+    font-family: 'Inter', Arial, sans-serif;
+    max-width: 65%;
+    box-sizing: border-box;
+}
+
+.tools-title {
+    color: #d1ff22;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align:left;
+    letter-spacing: 0.02em;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: transparent;}
+
+.tool-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.tool-icon img {
+    width: 80px;
+    height: 50px;
+    display: block;
+    opacity: 0.8;
+}
+
+.tool-name {
+    color: #d6d6d6;
+    font-size: 0.9rem;
+    font-weight:bolder;
+    text-align: center;
+    line-height: 1;
+    opacity: 0.9;
+}
+
+.tool-subtitle{
+  color: #d6d6d6ac;
+  font-style: normal;
+  font-size: 0.9rem;
+  margin-top:20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .tools-container {
+        padding: 40px 20px;
+    }
+	.container {
+	padding: 30px 15px;
+  }
+        
+    .tools-title {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+        
+    .tools-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        max-width: 400px;
+    }
+        
+    .tool-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+        
+    .tool-icon img {
+        width: 32px;
+        height: 32px;
+    }
+        
+    .tool-name {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-container {
+        padding: 30px 15px;
+    }
+        
+    .tools-title {
+        font-size: 1rem;
+    }
+        
+    .tools-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+        
+    .tool-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 12px;
+    }
+        
+    .tool-icon img {
+        width: 28px;
+        height: 28px;
+    }
+        
+    .tool-name {
+        font-size: 0.8rem;
+    }
+}
+
+
+

@@ -11,6 +11,7 @@ function App() {
 	const [domainIndex, setDomainIndex] = useState(0);
 	const domains = domainData.domains;
 	return (
+		
 		<div className="App">
 			<Navbar domains={domains} domainIndex={domainIndex} setDomainIndex={setDomainIndex} />
 			<Introduction
@@ -28,6 +29,7 @@ function App() {
 				<Projects projects={domains[domainIndex].projects} />
 			</section>
 		</div>
+		
 	);
 }
 

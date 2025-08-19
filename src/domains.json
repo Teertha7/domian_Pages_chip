@@ -1,9 +1,9 @@
 {
 	"domains": [
 		{
-			"key": "Analog",
-			"title": "Analog domain",
-			"subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"key": "Analog®",
+			"title": "Analog domain.",
+			"subtitle": "Shaping the future of VLSI.",
 			"description": [
 				"Analog design in VLSI is the intricate process of developing circuits that process continuous signals, such as amplifiers, oscillators, and filters. These components are crucial for bridging digital and real-world interfaces.",
 				"Careful consideration of noise, power, and precision is at the core of analog VLSI design. The field evolves alongside advancements in technology, demanding expertise in both theory and practical implementation."
@@ -110,9 +110,9 @@
 			]
 		},
 		{
-			"key": "Computer Architecture",
-			"title": "Computer Architecture domain",
-			"subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"key": "CompArch®",
+			"title": "Computer Architecture domain.",
+			"subtitle": "Shaping the future of VLSI.",
 			"description": [
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione! Facere, molestias vitae. Aut laudantium ex, iure libero eos aliquid quidem quibusdam nostrum laborum nisi fuga animi culpa nesciunt.",
 				"Modi reprehenderit perspiciatis incidunt sit neque quasi corporis autem dolor debitis! Cum nihil illo labore quasi eaque quia eos soluta. At ratione nam nemo illum eveniet omnis culpa itaque amet delectus corrupti id inventore officia ipsa beatae soluta, distinctio maxime perferendis!"
@@ -219,8 +219,8 @@
 			]
 		},
 		{
-			"key": "Simulation & Design",
-			"title": "Simulation and Design domain",
+			"key": "Simulation&Design®",
+			"title": "Simulation & Design domain.",
 			"subtitle": "Shaping the future of VLSI.",
 			"description": [
 				"Simulation & Design focuses on the intricate process of creating and validating digital hardware designs. This involves designing circuits that operate on discrete binary signals (0s and 1s), which form the very backbone of modern electronics. These components are crucial for processing information in everything from mobile phones to high-performance computers.",
@@ -328,9 +328,9 @@
 			]
 		},
 		{
-			"key": "Digital",
+			"key": "Digital®",
 			"title": "Digital domain",
-			"subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"subtitle": "Shaping the future of VLSI.",
 			"description": [
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione! Facere, molestias vitae. Aut laudantium ex, iure libero eos aliquid quidem quibusdam nostrum laborum nisi fuga animi culpa nesciunt.",
 				"Modi reprehenderit perspiciatis incidunt sit neque quasi corporis autem dolor debitis! Cum nihil illo labore quasi eaque quia eos soluta. At ratione nam nemo illum eveniet omnis culpa itaque amet delectus corrupti id inventore officia ipsa beatae soluta, distinctio maxime perferendis!"
