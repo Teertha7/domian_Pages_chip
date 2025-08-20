@@ -85,12 +85,7 @@ const Navbar = ({ domains, domainIndex, setDomainIndex }) => {
             });
             setShowSlider(true);
             // setHovering(true);
-            if (timeoutId) clearTimeout(timeoutId);
-            const id = setTimeout(() => {
-                setShowSlider(false);
-                setHovering(false);
-            }, 1000);
-            setTimeoutId(id);
+            
         }
     };
 

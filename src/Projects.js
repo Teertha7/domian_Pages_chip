@@ -1,5 +1,6 @@
 import Tools from "./Tools";
 import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const Projects = ({ projects }) => {
 	const [expandedIndexes, setExpandedIndexes] = useState(new Set());
@@ -25,7 +26,8 @@ const Projects = ({ projects }) => {
 						<h3
 							className="project-title"
 							onClick={() => toggleProject(index)}
-							style={{ cursor: "pointer" }}>
+							
+							>
 							{item.title}
 						</h3>
 						<div className="project-content">

@@ -51,14 +51,19 @@
 
 .navbar-slider {
     position: absolute;
-	top: 5px;    /* Add gap from top */
-    bottom: 5px; /* Add gap from bottom */
-    left: 8vw;   /* Match left padding of navbar */
-    right: 8vw;  /* Match right padding of navbar */
-    height: calc(100% - 10px);
+	top: 0.3vw;    /* Add gap from top */
+    bottom: 0.3vw; /* Add gap from bottom */
+      /* Match right padding of navbar */
+    height: calc(100% - 0.6vw);
     
+	background: rgba(204, 255, 0, 0.15);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid rgba(239, 255, 176, 0.8);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(147, 205, 23, 0.2), 
+              inset 0 4px 20px rgba(255, 255, 255, 0.3);
     
-    background: #d1ff22;
+    /* background: #d1ff22; */
     border-radius: 3vw;
     z-index: 0;
     transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
@@ -67,7 +72,22 @@
 	margin: 0;
 	padding:0;
 }
-
+.navbar-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px rgb(255, 255, 255),
+              inset 0px -9px 0px -8px rgb(255, 255, 255);
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) drop-shadow(10px 4px 6px rgb(0, 0, 0)) brightness(115%);
+}
 
 
 .top-navbar ol {
@@ -145,22 +165,28 @@ h2 {
 }
 
 .tools {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	padding: 3vh 0;
+	 display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items:flex-end;
+	
+	padding: 3vw;
 }
 
 .tool {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	
 	padding: 1rem;
 }
 
 .tool img {
-	width: 100px;
+	
+	max-height: 100px;
+	max-width: 200px;
+	
+}
+.tool{
+	opacity: 0.7;
 }
 
 .tool figcaption {
@@ -217,6 +243,67 @@ h2 {
 	font-size: 14px !important;
 }
 
+/* styles.css */
+/* .custom-cursor {
+  cursor: url("right-down.png")32 32 , pointer;
+  transition: all 0.3s ease; 
+} */
+
+.infinite-slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 5vw;
+  padding-bottom:5vw;
+  margin: 0 auto;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;
+}
+.slider-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;   /* ✨ this hides content beyond screen width */
+}
+.slider-track {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items:flex-end;
+  width: max-content;
+		transform: translateX(0);
+  animation: scroll 30s linear infinite; /* adjust speed */
+}
+
+.slide {
+  flex: 0 0 auto;
+  
+  justify-content: center;   /* centers horizontally */
+  align-items: center;
+  padding: 0 5vw; /* spacing between items */
+}
+.slider-track:hover {
+  animation-play-state: paused;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-size: 1.2rem;
+  width:100%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* move half (since duplSicated) */
+  }
+}
+
+
 section {
 	padding: 3vh 0;
 }
@@ -232,7 +319,7 @@ section {
 .project .project-title {
 	font-size: min(1.2rem, 5vw);
 	border-bottom: 2px gray solid;
-	margin: 2vh 2vw 1rem;
+	margin: 2vh 2vw 0;
 	position: relative;
 	text-indent: 2rem;
 	font-weight: 400;

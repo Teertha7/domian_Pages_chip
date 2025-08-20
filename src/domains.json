@@ -10,29 +10,18 @@
 			],
 			"tools": [
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
-				},
-				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
-				},
-				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
-				},
-				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "LTspice",
+					"icon": "https://companieslogo.com/img/orig/LLTC.defunct.2017-6436bcbb.png?t=1731420040"
 				}
+				
 			],
 			"images": [
 				{
-					"src": "/images/photo2.jpg",
+					"src": "/images/analog/analog_1.jpg",
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo3.jpg",
+					"src": "/images/analog/analog_2.jpg",
 					"alt": "Lorem"
 				},
 				{
@@ -42,12 +31,13 @@
 			],
 			"projects": [
 				{
-					"title": "Lorem ipsum",
+					"title": "Two Stage Cmos Opamp",
+					"year":"2025",
 					"image": {
-						"src": "/images/photo1.jpg",
+						"src": "/images/analog/analog_1.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Operational amplifiers (Op-Amps) are fundamental building blocks in analog and mixed-signal circuit design, widely used in signal conditioning, filtering, data conversion, and many other applications. This project aims to design and analyse a two-stage CMOS operational amplifier tailored for general-purpose analog applications. The design emphasizes key performance parameters such as high open-loop gain, low power consumption, and sufficient output swing all essential for integration into modern VLSI systems. ",
 					"tools": [
 						{
 							"name": "Lorem",
@@ -114,25 +104,24 @@
 			"title": "Computer Architecture domain.",
 			"subtitle": "Shaping the future of VLSI.",
 			"description": [
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione! Facere, molestias vitae. Aut laudantium ex, iure libero eos aliquid quidem quibusdam nostrum laborum nisi fuga animi culpa nesciunt.",
-				"Modi reprehenderit perspiciatis incidunt sit neque quasi corporis autem dolor debitis! Cum nihil illo labore quasi eaque quia eos soluta. At ratione nam nemo illum eveniet omnis culpa itaque amet delectus corrupti id inventore officia ipsa beatae soluta, distinctio maxime perferendis!"
-			],
+				"The Computer Architecture domain explores how software commands translate into physical action on a chip. It focuses on creating the processor's master blueprint, the essential bridge between code and hardware, to achieve maximum performance and efficiency.",
+
+"Work in this domain begins with the fundamentals of Instruction Set Architectures (ISAs). From there, the core activity is designing and building a complete processor from the ground up. This is a hands-on process using industry-standard hardware description languages.",
+
+"To create a truly high-performance processor, the domain covers the clever techniques that define modern computing. This includes implementing pipelining, sophisticated caching systems, and branch prediction. "
+	],
 			"tools": [
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "Verilog",
+					"icon": "https://eirikpre.gallerycdn.vsassets.io/extensions/eirikpre/systemverilog/0.13.11/1736203680374/Microsoft.VisualStudio.Services.Icons.Default"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "Yosys",
+					"icon": "https://yosyshq.readthedocs.io/projects/yosys/en/latest/_static/yshq_logo.png"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
-				},
-				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "AMD Xilinx Vivado",
+					"icon": "https://camo.githubusercontent.com/47432d6cc036316b48ea3ac3c68e52c30b8f337f1f81871b0ba1cfd2a8cab5f6/68747470733a2f2f7777772e78696c696e782e636f6d2f636f6e74656e742f64616d2f78696c696e782f696d67732f70726f64756374732f76697661646f2f76697661646f2d6d6c2f76697661646f2d6865726f2d6c6f676f2d7765622e706e67"
 				}
 			],
 			"images": [
@@ -151,12 +140,13 @@
 			],
 			"projects": [
 				{
-					"title": "Lorem ipsum",
+					"title": "Floating Point Unit",
+					"year":"2025",
 					"image": {
 						"src": "/images/photo1.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Architect and synthesize a Floating-Point Unit (FPU) in Verilog, the hardware core responsible for arithmetic with decimal numbers. This project covers the implementation of key operations like addition, subtraction, multiplication, and division, with a focus on ensuring strict adherence to the IEEE 754 standard, the industry-wide protocol that governs modern floating-point computation.",
 					"tools": [
 						{
 							"name": "Lorem",
@@ -173,34 +163,13 @@
 					]
 				},
 				{
-					"title": "Lorem ipsum",
+					"title": " Arithmetic Logic Unit with Booth's Multiplier",
+					"year":"2025",
 					"image": {
 						"src": "/images/photo3.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
-					"tools": [
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						}
-					]
-				},
-				{
-					"title": "Lorem ipsum",
-					"image": {
-						"src": "/images/photo2.jpg",
-						"alt": "Lorem"
-					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Design and synthesize the mathematical brain of a processor: an Arithmetic Logic Unit (ALU) in Verilog. This project involves implementing a full range of standard arithmetic and logical operations. A special focus is placed on creating an optimized multiplication circuit using Booth's algorithm, a powerful technique for efficiently handling signed numbers while minimizing hardware resources.",
 					"tools": [
 						{
 							"name": "Lorem",
@@ -216,6 +185,7 @@
 						}
 					]
 				}
+				
 			]
 		},
 		{
@@ -228,39 +198,72 @@
 			],
 			"tools": [
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "EDAPlayground",
+					"icon": "https://cdn.shopify.com/s/files/1/0242/8737/9520/files/EDAplaygroundREADY_240x240.png?v=1598518080"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": " Icarus Verilog",
+					"icon": "images/snd/icarus.png"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "Xilinx Vivado",
+					"icon": "https://user-images.githubusercontent.com/56430787/105164182-1afa8a80-5b15-11eb-8ac3-7ae5c9f0e15e.png"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "MicroWind",
+					"icon": "https://www.ni2designs.com/images/box-icon1.png"
+				},
+				{
+					"name": "KLayout",
+					"icon": "https://avatars.githubusercontent.com/u/46386928?s=280&v=4"
+				},
+				{
+					"name": "Cadence Virtuoso",
+					"icon": "https://companieslogo.com/img/orig/CDNS_BIG.D-5f8cc568.png?t=1720244491"
+				},
+				{
+					"name": "UVM",
+					"icon": "/images/snd/uvm.png"
+				},
+				{
+					"name": "TCL",
+					"icon": "https://www.logo.wine/a/logo/Tcl/Tcl-Logo.wine.svg"
 				}
 			],
 			"images": [
 				{
-					"src": "/images/photo3.jpg",
+					"src": "/images/snd/img21.jpg",
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo2.jpg",
+					"src": "/images/snd/img27.jpg",
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo1.jpg",
+					"src": "/images/snd/img28.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/snd/img29.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/snd/img34.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/snd/img35.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/snd/snd_1.png",
 					"alt": "Lorem"
 				}
 			],
 			"projects": [
 				{
-					"title": "Lorem ipsum",
+					"title": "4-bit Ripple Carry Adder Layout",
+					"year":"2025",
 					"image": {
 						"src": "/images/photo3.jpg",
 						"alt": "Lorem"
@@ -282,7 +285,8 @@
 					]
 				},
 				{
-					"title": "Lorem ipsum",
+					"title": "Parametrised Booth's Multiplier",
+					"year":"2025",
 					"image": {
 						"src": "/images/photo2.jpg",
 						"alt": "Lorem"
