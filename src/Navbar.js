@@ -116,6 +116,8 @@ const Navbar = ({ domains, domainIndex, setDomainIndex }) => {
                             left: barStyle.left,
                             width: barStyle.width,
 							
+							
+							
                             opacity: barStyle.opacity,
 							
                             //background: barStyle.background,

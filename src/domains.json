@@ -40,60 +40,8 @@
 					"description": "Operational amplifiers (Op-Amps) are fundamental building blocks in analog and mixed-signal circuit design, widely used in signal conditioning, filtering, data conversion, and many other applications. This project aims to design and analyse a two-stage CMOS operational amplifier tailored for general-purpose analog applications. The design emphasizes key performance parameters such as high open-loop gain, low power consumption, and sufficient output swing all essential for integration into modern VLSI systems. ",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						}
-					]
-				},
-				{
-					"title": "Lorem ipsum",
-					"image": {
-						"src": "/images/photo2.jpg",
-						"alt": "Lorem"
-					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
-					"tools": [
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						}
-					]
-				},
-				{
-					"title": "Lorem ipsum",
-					"image": {
-						"src": "/images/photo3.jpg",
-						"alt": "Lorem"
-					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
-					"tools": [
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "LTspice",
+							"icon": "https://companieslogo.com/img/orig/LLTC.defunct.2017-6436bcbb.png?t=1731420040"
 						}
 					]
 				}
@@ -149,16 +97,8 @@
 					"description": "Architect and synthesize a Floating-Point Unit (FPU) in Verilog, the hardware core responsible for arithmetic with decimal numbers. This project covers the implementation of key operations like addition, subtraction, multiplication, and division, with a focus on ensuring strict adherence to the IEEE 754 standard, the industry-wide protocol that governs modern floating-point computation.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "Verilog",
+							"icon": "https://eirikpre.gallerycdn.vsassets.io/extensions/eirikpre/systemverilog/0.13.11/1736203680374/Microsoft.VisualStudio.Services.Icons.Default"
 						}
 					]
 				},
@@ -172,16 +112,8 @@
 					"description": "Design and synthesize the mathematical brain of a processor: an Arithmetic Logic Unit (ALU) in Verilog. This project involves implementing a full range of standard arithmetic and logical operations. A special focus is placed on creating an optimized multiplication circuit using Booth's algorithm, a powerful technique for efficiently handling signed numbers while minimizing hardware resources.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "Verilog",
+							"icon": "https://eirikpre.gallerycdn.vsassets.io/extensions/eirikpre/systemverilog/0.13.11/1736203680374/Microsoft.VisualStudio.Services.Icons.Default"
 						}
 					]
 				}
@@ -265,70 +197,39 @@
 					"title": "4-bit Ripple Carry Adder Layout",
 					"year":"2025",
 					"image": {
-						"src": "/images/photo3.jpg",
+						"src": "/images/snd/img21.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Engineered the full physical layout of a 4-bit ripple-carry adder using KLayout.Executed the complete design flow, from schematic capture of a 1-bit full adder on LTSpice to the final layout, ensuring adherence to design rules.Successfully performed Design Rule Checking (DRC) and Layout Versus Schematic (LVS) verification to guarantee manufacturability and functional correctness.Conducted post-layout simulations to analyze and validate critical performance metrics, including propagation delay and power consumption.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "KLayout",
+							"icon": "https://avatars.githubusercontent.com/u/46386928?s=280&v=4"
 						},
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "LTspice",
+							"icon": "https://companieslogo.com/img/orig/LLTC.defunct.2017-6436bcbb.png?t=1731420040"
 						}
+						
 					]
 				},
 				{
 					"title": "Parametrised Booth's Multiplier",
 					"year":"2025",
 					"image": {
-						"src": "/images/photo2.jpg",
+						"src": "/images/snd/snd_1.png",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": " Designed and implemented a scalable N-bit signed multiplier using the Booth's algorithm in Verilog HDL.Developed a parametrised RTL model, enabling easy configuration for different bit-widths, which significantly improves design reusability.Created a comprehensive testbench to perform rigorous functional verification, ensuring the multiplier's accuracy across a wide range of signed integer inputs.The architecture was optimized for speed and area efficiency by reducing the number of partial products generated compared to a standard array multiplier.Explored different implementations like state machine logic and algebraic logic",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "Verilog",
+							"icon": "https://eirikpre.gallerycdn.vsassets.io/extensions/eirikpre/systemverilog/0.13.11/1736203680374/Microsoft.VisualStudio.Services.Icons.Default"
 						}
-					]
-				},
-				{
-					"title": "Lorem ipsum",
-					"image": {
-						"src": "/images/photo1.jpg",
-						"alt": "Lorem"
-					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
-					"tools": [
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						}
+						
 					]
 				}
+				
 			]
 		},
 		{
@@ -336,105 +237,117 @@
 			"title": "Digital domain",
 			"subtitle": "Shaping the future of VLSI.",
 			"description": [
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione! Facere, molestias vitae. Aut laudantium ex, iure libero eos aliquid quidem quibusdam nostrum laborum nisi fuga animi culpa nesciunt.",
-				"Modi reprehenderit perspiciatis incidunt sit neque quasi corporis autem dolor debitis! Cum nihil illo labore quasi eaque quia eos soluta. At ratione nam nemo illum eveniet omnis culpa itaque amet delectus corrupti id inventore officia ipsa beatae soluta, distinctio maxime perferendis!"
+				"Digital design in VLSI focuses on creating hardware architectures that process discrete binary signals—0s and 1s—through well-structured combinational and sequential circuits. This includes designing adders, multiplexers, counters, registers, finite state machines, processors, and memory subsystems etc.",
+				"A core aspect of this domain is translating functional requirements into hardware descriptions using HDLs such as Verilog, SystemVerilog. Designers simulate, verify, and synthesize their code into efficient hardware that meets timing, power, and area constraints."
 			],
 			"tools": [
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "Xilinx Vivado",
+					"icon": "https://user-images.githubusercontent.com/56430787/105164182-1afa8a80-5b15-11eb-8ac3-7ae5c9f0e15e.png"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "Cadence Virtuoso",
+					"icon": "https://companieslogo.com/img/orig/CDNS_BIG.D-5f8cc568.png?t=1720244491"
 				},
 				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
-				},
-				{
-					"name": "Lorem",
-					"icon": "/images/chipmit-logo.png"
+					"name": "EDAPlayground",
+					"icon": "https://cdn.shopify.com/s/files/1/0242/8737/9520/files/EDAplaygroundREADY_240x240.png?v=1598518080"
 				}
 			],
 			"images": [
 				{
-					"src": "/images/photo2.jpg",
+					"src": "/images/digital/digital_1.jpg",
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo1.jpg",
+					"src": "/images/digital/digital_2a.jpg",
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo3.jpg",
+					"src": "/images/digital/digital_2b.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/digital/digital_3.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/digital/3a.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/digital/3b.jpg",
+					"alt": "Lorem"
+				},
+				{
+					"src": "/images/digital/3c.jpg",
+					"alt": "Lorem"
+				},
+
+
+				{
+					"src": "/images/digital/digital_4.jpg",
 					"alt": "Lorem"
 				}
 			],
 			"projects": [
 				{
-					"title": "Lorem ipsum",
+					"title": "UART Implementation in Verilog",
+					"year":"2025",
 					"image": {
-						"src": "/images/photo2.jpg",
+						"src": "/images/digital/digital_1.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Designed and implemented a synthesizable UART module supporting reliable asynchronous serial communication. The design includes transmitter (TX) and receiver (RX) modules with FSM-based control, baud rate generation, and error handling. Verified using a comprehensive testbench and simulated before FPGA synthesis.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "Xilinx Vivado",
+							"icon": "https://user-images.githubusercontent.com/56430787/105164182-1afa8a80-5b15-11eb-8ac3-7ae5c9f0e15e.png"
 						}
 					]
 				},
 				{
-					"title": "Lorem ipsum",
+					"title": "I²C on FPGA – Temperature Sensor Interface",
+					"year":"2025",
 					"image": {
-						"src": "/images/photo3.jpg",
+						"src": "/images/digital/digital_2a.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": " Developed an FPGA-based I²C master to read real-time temperature data from a digital sensor. Implemented state machines for I²C protocol control, start/stop conditions, and data reception. Displayed processed temperature data on FPGA output peripherals.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "Xilinx Vivado",
+							"icon": "https://user-images.githubusercontent.com/56430787/105164182-1afa8a80-5b15-11eb-8ac3-7ae5c9f0e15e.png"
 						}
 					]
 				},
 				{
-					"title": "Lorem ipsum",
+					"title": "Comparison of Approximate Adders",
+					"year":"2025",
 					"image": {
-						"src": "/images/photo1.jpg",
+						"src": "/images/digital/digital_3.jpg",
 						"alt": "Lorem"
 					},
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque tempora facilis quos dolorum, odit nobis magni! Nemo, iure ipsam libero quae tenetur saepe minus sequi dolorum, expedita, rerum ratione!",
+					"description": "Designed and analyzed three adder architectures — Exact Adder, Truncated Adder, and Error-Tolerant Adder — targeting low-power ALUs for edge processors. Compared designs based on speed, area, and accuracy trade-offs, with Verilog-based implementation and synthesis.",
 					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
+							"name": "EDAPlayground",
+							"icon": "https://cdn.shopify.com/s/files/1/0242/8737/9520/files/EDAplaygroundREADY_240x240.png?v=1598518080"
+						}
+					]
+				},
+				{
+					"title": "Simple Synchronous SRAM Module",
+					"year":"2025",
+					"image": {
+						"src": "/images/digital/digital_4.jpg",
+						"alt": "Lorem"
+					},
+					"description": "Implemented a 16×8-bit synchronous SRAM in Verilog, featuring synchronous read/write operations, parameterized design, and reset functionality. Verified operation through testbench simulations and waveform analysis.",
+					"tools": [
 						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
-						},
-						{
-							"name": "Lorem",
-							"icon": "/images/chipmit-logo.png"
+							"name": "EDAPlayground",
+							"icon": "https://cdn.shopify.com/s/files/1/0242/8737/9520/files/EDAplaygroundREADY_240x240.png?v=1598518080"
 						}
 					]
 				}

@@ -166,10 +166,34 @@ h2 {
 
 .tools {
 	 display: flex;
-  justify-content: center;   /* centers horizontally */
+  justify-content:flex-start;   /* centers horizontally */
   align-items:flex-end;
 	
 	padding: 3vw;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border-bottom: 1px gray solid;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.project-year {
+    color: lightgray;
+    font-size: 15px;
+}
+
+.project-header:hover {
+    background-color: rgba(209, 255, 34, 0.1);
 }
 
 .tool {
@@ -315,10 +339,13 @@ section {
 .project {
 	color: lightgray;
 }
+.projects-description {
+	font-size: 17px;
 
+}
 .project .project-title {
-	font-size: min(1.2rem, 5vw);
-	border-bottom: 2px gray solid;
+	font-size: 17px;
+	
 	margin: 2vh 2vw 0;
 	position: relative;
 	text-indent: 2rem;
@@ -327,6 +354,7 @@ section {
 }
 
 .project .project-title::after {
+	
 	position: absolute;
 	content: "";
 	width: 10px;
@@ -364,7 +392,21 @@ section {
 .project-shown .project-content {
 	display: flex;
 }
+@media (max-width: 900px) {
+	.tool {
+		font-size:16px ;}
 
+	.tool img {
+	
+	max-height: 80px;
+	max-width: 100px;
+	
+}
+.navbar-slider{
+		border-radius:100vw ;
+	}	
+	
+}
 /* Adjust for smaller devices */
 @media (max-width: 768px) {
 	/* .Slider-image {
@@ -374,11 +416,23 @@ section {
 	/* .tools {
 		flex-direction: column;
 	} */
+	 .tool {
+		font-size:14px ;}
+
+	.tool img {
+	
+	max-height: 70px;
+	max-width: 100px;
+	
+}
 	 .top-navbar {
         padding: 10px 2px;
 		/* row-gap: 10vw; */
 		
     }
+	.navbar-slider{
+		border-radius:100vw ;
+	}
     .top-navbar ol {
         
         padding: 1vw 11vw 1vw 11vw;
@@ -499,6 +553,17 @@ align-items: flex-start;
 }
 /* Extra small screens */
 @media (max-width: 480px) {
+
+
+	.tool {
+		font-size:10px ;}
+
+	.tool img {
+	
+	max-height: 50px;
+	max-width: 70px;
+	
+}
 	.top-navbar ol {
         
         padding: 5px 24px 5px 24px;

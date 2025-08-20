@@ -23,21 +23,31 @@ const Projects = ({ projects }) => {
 				const isShown = expandedIndexes.has(index);
 				return (
 					<article key={index} className={`project ${isShown ? "project-shown" : ""}`}>
-						<h3
-							className="project-title"
-							onClick={() => toggleProject(index)}
-							
-							>
-							{item.title}
-						</h3>
-						<div className="project-content">
+						<div 
+                        className="project-header"
+                        onClick={() => toggleProject(index)}
+                    >
+                        <h3 className="project-title">
+                            {item.title}
+                        </h3>
+                        <span className="project-year">{item.year}</span>
+                    </div>
+
+						<div className="project-content"
+						style={{ padding:"2vw", alignItems:"flex-start", display: isShown ? 'flex' : 'none', flexDirection: "row"
+								 }}
+						
+						>
 							<img
 								className="project-image"
 								src={process.env.PUBLIC_URL + item.image.src}
 								alt={item.image.alt}
 							/>
 							<div className="project-data">
-								<p className="project-description">{item.description}</p>
+								<p className="project-description"
+								style={{ fontSize: "17px"
+								 }}
+								>{item.description}</p>
 								<Tools tools={item.tools} />
 							</div>
 						</div>
