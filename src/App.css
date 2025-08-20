@@ -178,7 +178,13 @@ h2 {
     align-items: center;
     padding: 0.8rem 2rem;
     cursor: pointer;
+	
     border-bottom: 1px gray solid;
+    transition: background-color 0.5s ease;
+}
+
+.project-header:hover {
+    background-color: rgba(209, 255, 34, 0.1);
 }
 
 .project-title {
@@ -368,16 +374,40 @@ section {
 }
 
 .project-content {
-	display: none;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 2vh 0;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0 ;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-content > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-shown .project-content > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-content:not(.show) {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .project-image {
 	max-width: 35vw;
 	border-radius: 15px;
+	margin: 2vw 0 0 0;
 }
 
 .project-data {
@@ -392,6 +422,12 @@ section {
 .project-shown .project-content {
 	display: flex;
 }
+
+
+
+
+
+
 @media (max-width: 900px) {
 	.tool {
 		font-size:16px ;}
@@ -409,6 +445,22 @@ section {
 }
 /* Adjust for smaller devices */
 @media (max-width: 768px) {
+	.project .project-title,
+    .project-header .project-title {
+        font-size: 15px !important;
+    }
+
+    .project-header .project-year {
+        font-size: 13px !important;
+    }
+	.project-data {
+        max-width: 100% !important; /* Force full width on mobile */
+        padding-left: 0 !important; /* Remove left padding on mobile */
+        width: 100% !important; /* Ensure full width */
+    }
+    .project-data .project-description {
+        font-size: 15px !important;
+    }
 	/* .Slider-image {
 		aspect-ratio: 4 / 3;
 	} */
@@ -445,18 +497,7 @@ section {
     }
 	
 
-	.project-content {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.project-image {
-		max-width: 85vw;
-	}
-
-	.project-data {
-		max-width: 85vw;
-	}
+	
 	
 }
 
@@ -553,6 +594,19 @@ align-items: flex-start;
 }
 /* Extra small screens */
 @media (max-width: 480px) {
+	.project .project-title,
+    .project-header .project-title {
+        font-size: 14px !important;
+    }
+
+    .project-header .project-year {
+        font-size: 12px !important;
+    }
+
+    .project-data .project-description {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
 
 
 	.tool {
@@ -723,4 +777,102 @@ align-items: flex-start;
 }
 
 
+.project-content {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
 
+.project-content > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project-shown .project-content > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-content:not(.show) {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-data {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-description {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.project-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column !important;
+        
+    }
+
+    .project-image {
+        max-width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .project-description {
+        font-size: 15px !important;
+    }
+
+    .project-header {
+        padding: 0.6rem 1rem !important;
+    }
+
+    .project-title {
+        font-size: 15px !important;
+    }
+
+    .project-year {
+        font-size: 13px !important;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .project-content {
+       
+    }
+
+    .project-description {
+        font-size: 14px !important;
+    }
+
+    .project-header {
+        padding: 0.3rem 0rem !important;
+    }
+
+    .project-title {
+        font-size: 14px !important;
+    }
+
+    .project-year {
+        font-size: 12px !important;
+    }
+}
