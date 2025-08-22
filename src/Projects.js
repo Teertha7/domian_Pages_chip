@@ -33,6 +33,7 @@ const Projects = ({ projects }) => {
                             />
                             <div className="project-data">
                                 <p className="project-description">{item.description}</p>
+								<h2 className="tools-used">Tools used:</h2>
                                 <Tools tools={item.tools} />
                             </div>
                         </div>

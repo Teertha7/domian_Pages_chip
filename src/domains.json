@@ -25,7 +25,7 @@
 					"alt": "Lorem"
 				},
 				{
-					"src": "/images/photo1.jpg",
+					"src": "/images/analog/image.png",
 					"alt": "Lorem"
 				}
 			],
@@ -38,6 +38,21 @@
 						"alt": "Lorem"
 					},
 					"description": "Operational amplifiers (Op-Amps) are fundamental building blocks in analog and mixed-signal circuit design, widely used in signal conditioning, filtering, data conversion, and many other applications. This project aims to design and analyse a two-stage CMOS operational amplifier tailored for general-purpose analog applications. The design emphasizes key performance parameters such as high open-loop gain, low power consumption, and sufficient output swing all essential for integration into modern VLSI systems. ",
+					"tools": [
+						{
+							"name": "LTspice",
+							"icon": "https://companieslogo.com/img/orig/LLTC.defunct.2017-6436bcbb.png?t=1731420040"
+						}
+					]
+				},
+				{
+					"title": "Voltage Regulator",
+					"year":"2025",
+					"image": {
+						"src": "/images/analog/image.png",
+						"alt": "Lorem"
+					},
+					"description": "An Op-Amp based voltage regulator is designed to provide a stable DC output voltage independent of changes in input voltage or load current. In this design, the operational amplifier acts as an error detector by continuously comparing the scaled output voltage with a fixed reference voltage. Any difference between these two signals generates an error voltage at the Op-Amp output, which drives a series pass transistor. This feedback action ensures that the output remains regulated at the desired voltage. Compared to simple diode regulators, this configuration offers higher accuracy, better stability, and improved load-handling capability, making it suitable for sensitive analog and digital applications.",
 					"tools": [
 						{
 							"name": "LTspice",

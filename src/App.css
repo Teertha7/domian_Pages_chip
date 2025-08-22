@@ -164,6 +164,13 @@ h2 {
 	font-size: min(6vw, 2.2rem);
 }
 
+.tools-used{
+	color: #d1ff22;
+	padding: 0;
+	
+	font-size: min(4vw, 1.2rem);
+
+}
 .tools {
 	 display: flex;
   justify-content:flex-start;   /* centers horizontally */
@@ -816,7 +823,7 @@ align-items: flex-start;
 .project-description {
     font-size: 17px;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-image {
