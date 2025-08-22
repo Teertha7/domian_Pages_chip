@@ -12,8 +12,16 @@
 }
 
 .App {
-	background-color: black;
+	min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  
+	
 	font-family: "Inter", sans-serif;
+}
+.App > div {
+  position: relative;
+  z-index: auto;
 }
 
 .top-navbar {
@@ -65,7 +73,7 @@
     
     /* background: #d1ff22; */
     border-radius: 3vw;
-    z-index: 0;
+    z-index: 2;
     transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
     opacity: 0.2;
     pointer-events: none;
@@ -85,7 +93,7 @@
   box-shadow: inset -10px -8px 0px -11px rgb(255, 255, 255),
               inset 0px -9px 0px -8px rgb(255, 255, 255);
   opacity: 0.6;
-  z-index: -1;
+  z-index: 1;
   filter: blur(1px) drop-shadow(10px 4px 6px rgb(0, 0, 0)) brightness(115%);
 }
 
@@ -161,7 +169,8 @@ p {
 h2 {
 	color: #d1ff22;
 	padding-left: 6vw;
-	font-size: min(6vw, 2.2rem);
+	font-size: min(6vw, 2.2rem) !important;
+	font-weight: 700
 }
 
 .tools-used{
@@ -252,7 +261,7 @@ h2 {
 }
 
 .swiper-pagination-bullet-active {
-	background-color: slateblue !important;
+	background-color: rgb(218, 243, 52) !important;
 	opacity: 1 !important;
 }
 
@@ -515,8 +524,8 @@ section {
 /* AnalogDomain.css */
 
 .container {
-  background-color: #000000;
-  color: #cccccc;
+  background-color: #00000000;
+  color: #cccccc;	
   height: 100%;
   width: 100%;
   padding:90px;
@@ -652,8 +661,6 @@ align-items: flex-start;
     font-size: 0.95rem;
   }
 }
-/* Add this to your existing AnalogDomain.css */
-
 .tools-container {
     padding: 60px;
     margin: 20px auto 0 auto; 
@@ -882,4 +889,68 @@ align-items: flex-start;
     .project-year {
         font-size: 12px !important;
     }
+}
+
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  height: 100%;
+    z-index: -1 !important;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+.content-layer {
+    position: relative;
+    z-index: 1 !important;
+}
+
+/* Update components that might be blocking */
+.top-navbar {
+    z-index: 10;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+     background: transparent !important;
+}
+
+.projects-container {
+    position: relative;
+    z-index: 1;
+    background: transparent !important;
+}
+
+.project {
+     background: transparent !important;
+}
+
+.project-header {
+    background: transparent !important;
+    transition: background-color 0.5s ease;
+}
+
+.project-header:hover {
+    background-color: rgba(209, 255, 34, 0.1);
+}
+
+.project-content {
+     background: transparent !important;
+}
+
+.tools {
+    position: relative;
+    z-index: 1;
+     background: transparent !important;
+}
+
+/* Remove any background colors that might be blocking */
+.App {
+     background: transparent !important;
+}
+
+.App > div {
+    background: transparent !important;
 }

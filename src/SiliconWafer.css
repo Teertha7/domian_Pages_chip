@@ -1,0 +1,19 @@
+/* Optional CSS file for any additional styling if needed */
+.silicon-wafer-container {
+  min-height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.silicon-wafer-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  min-height: 100vh;
+}
+
+.silicon-wafer-cell {
+  background-color: #000000;
+  aspect-ratio: 1;
+  cursor: crosshair;
+  position: relative;
+}
