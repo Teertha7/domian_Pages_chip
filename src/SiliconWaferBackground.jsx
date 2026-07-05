@@ -4,29 +4,7 @@ import { motion } from "framer-motion"
 const SiliconWaferBackground = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
   const gridRef = useRef(null)
-  const [gridSize, setGridSize] = useState({ rows: 23, cols: 23 })
-  const [gridData, setGridData] = useState([])
-
-  useEffect(() => {
-    // Initialize grid data
-    const initialGrid = Array.from({ length: gridSize.rows * gridSize.cols }, (_, i) => ({
-      opacity: 0,
-      shouldShow: false,
-    }))
-    setGridData(initialGrid)
-  }, [gridSize.rows, gridSize.cols])
-
-  const handleMouseMove = (e) => {
-  if (!gridRef.current) return;
-  const rect = gridRef.current.getBoundingClientRect();
-  
-  const relativeX = e.clientX - rect.left;
-  const relativeY = e.clientY - rect.top;
-
-  console.log("relative", relativeX, relativeY);
-
-  setMousePos({ x: relativeX, y: relativeY });
-};
+  const gridSize = { rows: 23, cols: 23 }
 
 
   const getRandomRainbowGradient = (opacity) => {

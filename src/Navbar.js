@@ -49,8 +49,6 @@ const Navbar = ({ domains, domainIndex, setDomainIndex }) => {
     const olRef = useRef(null);
     const [barStyle, setBarStyle] = useState({ left: 0, width: 0, opacity: 0.2, background: "#d1ff22" });
     const [showSlider, setShowSlider] = useState(true);
-    const [hovering, setHovering] = useState(false);
-    const [timeoutId, setTimeoutId] = useState(null);
 
     // Helper to get correct li
     const getLi = (index) => {
@@ -102,7 +100,6 @@ const Navbar = ({ domains, domainIndex, setDomainIndex }) => {
             setShowSlider(true);
             //setHovering(false);
         }
-        if (timeoutId) clearTimeout(timeoutId);
     };
 
     return (
@@ -136,7 +133,7 @@ const Navbar = ({ domains, domainIndex, setDomainIndex }) => {
                             cursor: "pointer",
                             position: "relative",
                             zIndex: 1,
-                            background: hovering && showSlider && barStyle.left === getLi(index)?.offsetLeft ? "#d1ff22" : "transparent",
+                            background: "transparent",
                             transition: "background 0.3s"
                         }}
                     >
